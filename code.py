@@ -7,9 +7,9 @@ import requests
 def get_telephony_credits(api_host, integration_key, secret_key, user_id):
     # Set up Duo API client
     admin_api = duo_client.Admin(
-        ikey=DIAQM0EUCUUQYLPYL2O6, 
-        skey=Wzh4aLvSeEoHp1Pi5YJdxTG5KoDmtPzpAU8a1sTH,
-        host=api-a4b09f6a.duosecurity.com
+        ikey="DIAQM0EUCUUQYLPYL2O6", 
+        skey="Wzh4aLvSeEoHp1Pi5YJdxTG5KoDmtPzpAU8a1sTH",
+        host="api-a4b09f6a.duosecurity.com"
     )
 
     # Get user details, including Telephony Credits information
@@ -33,7 +33,7 @@ def check_telephony_credits(api_host, integration_key, secret_key, user_id, thre
 def send_alert(message):
     # Use your preferred method to send an alert (e.g., email, Slack, etc.)
     # For example, you can use a simple HTTP request to a webhook
-    webhook_url = "YOUR_ALERT_WEBHOOK_URL"
+    webhook_url = "YOUR_ALERT_WEBHOOK_URL"  -> need to change webhook url
     payload = {"text": message}
     requests.post(webhook_url, json=payload)
 
@@ -43,7 +43,7 @@ integration_key = "DIAQM0EUCUUQYLPYL2O6"
 secret_key = "Wzh4aLvSeEoHp1Pi5YJdxTG5KoDmtPzpAU8a1sTH"
 
 # Set the user ID and the Telephony Credits threshold
-user_id_to_monitor = "USER_ID_TO_MONITOR"
+user_id_to_monitor = "USER_ID_TO_MONITOR"  -> need to change userid
 telephony_credits_threshold = 10  # Adjust this threshold based on your needs
 
 # Check Telephony Credits and send alert if low
