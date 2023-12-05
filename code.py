@@ -1,15 +1,4 @@
 
- **Duo SDK for Python:**
-   - Make sure you have the Duo SDK for Python installed. You can typically install it using a package manager like pip:
-     ```bash
-     pip install duo_client
-     ```
-
- **API Keys:**
-   - Retrieve the "UTD ISO Telephony Credits Monitor API Keys" from the "Shared-Engineering Team – Students" LastPass folder.
-
-#### Python Script:
-
 ```python
 import duo_client
 import requests
@@ -18,9 +7,9 @@ import requests
 def get_telephony_credits(api_host, integration_key, secret_key, user_id):
     # Set up Duo API client
     admin_api = duo_client.Admin(
-        ikey=integration_key,
-        skey=secret_key,
-        host=api_host
+        ikey=DIAQM0EUCUUQYLPYL2O6, 
+        skey=Wzh4aLvSeEoHp1Pi5YJdxTG5KoDmtPzpAU8a1sTH,
+        host=api-a4b09f6a.duosecurity.com
     )
 
     # Get user details, including Telephony Credits information
@@ -49,9 +38,9 @@ def send_alert(message):
     requests.post(webhook_url, json=payload)
 
 # Set your Duo API information
-api_host = "api-XXXXXXXX.duosecurity.com"
-integration_key = "YOUR_INTEGRATION_KEY"
-secret_key = "YOUR_SECRET_KEY"
+api_host = "api-a4b09f6a.duosecurity.com"
+integration_key = "DIAQM0EUCUUQYLPYL2O6"
+secret_key = "Wzh4aLvSeEoHp1Pi5YJdxTG5KoDmtPzpAU8a1sTH"
 
 # Set the user ID and the Telephony Credits threshold
 user_id_to_monitor = "USER_ID_TO_MONITOR"
