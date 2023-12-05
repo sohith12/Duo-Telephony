@@ -1,5 +1,3 @@
-
-```python
 import duo_client
 import requests
 
@@ -44,9 +42,7 @@ secret_key = "Wzh4aLvSeEoHp1Pi5YJdxTG5KoDmtPzpAU8a1sTH"
 
 # Set the user ID and the Telephony Credits threshold
 user_id_to_monitor = "USER_ID_TO_MONITOR"  -> need to change userid
-telephony_credits_threshold = 10  # Adjust this threshold based on your needs
+telephony_credits_threshold = 20  # Adjust this threshold based on your needs
 
 # Check Telephony Credits and send alert if low
 check_telephony_credits(api_host, integration_key, secret_key, user_id_to_monitor, telephony_credits_threshold)
-```
-
