@@ -9,8 +9,8 @@ api_host = "api-a4b09f6a.duosecurity.com"
 integration_key = "DIAQM0EUCUUQYLPYL2O6"
 secret_key = "Wzh4aLvSeEoHp1Pi5YJdxTG5KoDmtPzpAU8a1sTH"
 user_id_to_monitor = "USER_ID_TO_MONITOR"
-telephony_credits_threshold = 20
-webhook_url = "YOUR_ALERT_WEBHOOK_URL"  # Change webhook URL
+telephony_credits_threshold = 500
+webhook_url = "matt.willoughby@utdallas.edu"  # Change webhook URL
 
 # Get the current script path
 script_path = os.path.dirname(os.path.realpath(__file__))
@@ -51,7 +51,7 @@ integration_key = "DIAQM0EUCUUQYLPYL2O6"
 secret_key = "Wzh4aLvSeEoHp1Pi5YJdxTG5KoDmtPzpAU8a1sTH"
 
 # Set the user ID and the Telephony Credits threshold
-user_id_to_monitor = "USER_ID_TO_MONITOR"  -> need to change userid
+user_id_to_monitor = "USER_ID_TO_MONITOR"   # DUO USER ID"
 telephony_credits_threshold = 500  # Adjust this threshold based on your needs
 
 def main():
